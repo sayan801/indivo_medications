@@ -87,6 +87,7 @@ def index(request):
 
 def list_meds(request):
     client = get_indivo_client(request)
+    print 'checking by chandra in list meds'
     
     if request.session.has_key('record_id'):
         record_id = request.session['record_id']
